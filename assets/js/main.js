@@ -138,7 +138,8 @@ document.addEventListener('click', function(e){
         pokeStatsUl.style.display = "none"
         pokeStory.style.display = "flex"
     }
-    // ----- Language Buttons Handlers -----
+    
+    
     if(e.target.innerText == "En"){
         let storyEnText = document.querySelector('.modal .story-en')
         let mainStory = document.querySelector('.modal .main-story')
@@ -168,10 +169,7 @@ let firstSeason = document.querySelector("#firstSeasonBtn").addEventListener('cl
 
 
 
-
-
-
-// --------- filter pokemons ---------
+// função para criar filtro por tipo
 
 function filterByType (e){
     let filterType = document.querySelector('#poke-type-filter')

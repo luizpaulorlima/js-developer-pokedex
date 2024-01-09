@@ -9,15 +9,6 @@ body {
     background-size: cover;
 }
 
-h1 {
-    color: #fff;
-    text-shadow: 0 2px 4px black;
-    font-family: 'Pokemon Solid', sans-serif;
-    letter-spacing: 10px;
-    font-size: 4rem;
-    margin-top: 5px;
-}
-
 .content {
     text-align: center;
     width: 100vw;
@@ -27,9 +18,9 @@ h1 {
     margin: auto;
 }
 
-.footer {
+.footer .p {
     text-align: center;
-    text-transform: capitalize;
+    display: block;
 }
 
 .content .poke-stats,
@@ -501,7 +492,7 @@ select option {
     width: 100%;
 }
 
-/* -------------------- MEDIA QUERY -------------------- */
+/* Media Query */
 
 @media only screen and (max-width: 992px) {
 
