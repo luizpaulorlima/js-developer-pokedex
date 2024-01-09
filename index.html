@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pokedex</title>
 
     <!-- Normalize CSS -->
@@ -21,25 +22,64 @@
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/pokedex.css">
 
+    <!-- Nosso FavIcon-->
     <link rel="shortcut icon" type="image/icon" href="./assets/img/favicon.ico">
 </head>
 
 <body>
     <section class="content">
+        <header>
         <h1><img src="https://readme-typing-svg.demolab.com?font=Roboto&weight=500&size=50&duration=2500&pause=1000&color=000000&center=true&vCenter=true&random=false&width=500&lines=POKEDEX" alt="Typing SVG" /></h1>
+        </header>
 
+        <main>
+        <div class="optionsDiv">
+            <div class="select">
+                <select name="filter-poke" id="poke-type-filter" title="filtrar-poke-por-natureza">
+                    <option value="all">Todos</option>
+                    <option value="bug">Inseto</option>
+                    <option value="dragon">Dragão</option>
+                    <option value="electric">Elétrico</option>
+                    <option value="fairy">Fada</option>
+                    <option value="fighting">Lutador</option>
+                    <option value="fire">Fogo</option>
+                    <option value="flying">Voador</option>
+                    <option value="ghost">Fantasma</option>
+                    <option value="grass">Planta</option>
+                    <option value="ground">Terra</option>
+                    <option value="ice">Gelo</option>
+                    <option value="normal">Normal</option>
+                    <option value="poison">Veneno</option>
+                    <option value="psychic">Psíquico</option>
+                    <option value="rock">Pedra</option>
+                    <option value="steel">Metal</option>
+                    <option value="water">Água</option>
+                </select>
+            </div>
+        </main>
+
+        <main>
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
 
+        </main>
+
+        <main>
         <div class="pagination">
             <button id="loadMoreButton" type="button">
-                Load More
+                Carregar mais
             </button>
         </div>
+        </main>
     </section>
-    
 
+    <div class="modal" id="modal-id">
+        <div id="modalpoke">Pokemon com detalhes
+            <input type="button" value="X" class="closeButton">
+        </div>
+    </div>
+    
     <!-- Nosso JS -->
     <script src="./assets/js/pokemon-model.js"></script>
     <script src="./assets/js/poke-api.js"></script>
