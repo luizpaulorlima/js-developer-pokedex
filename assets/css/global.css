@@ -4,9 +4,13 @@
 }
 
 body {
-    background-image: url(/assets/imgs/bg.png);
+    background-color: transparent;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.header .p {
+    text-align: right;
 }
 
 .content {
@@ -18,10 +22,6 @@ body {
     margin: auto;
 }
 
-.footer .p {
-    text-align: center;
-    display: block;
-}
 
 .content .poke-stats,
 .content .closeButton,
